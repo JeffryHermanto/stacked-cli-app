@@ -1,3 +1,4 @@
 library stacked_cli_app;
 
-export 'main.dart';
+export 'setup.dart';
+export 'main_app.dart';
