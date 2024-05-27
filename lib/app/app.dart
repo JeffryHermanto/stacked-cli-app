@@ -1,9 +1,9 @@
+import 'package:stacked/stacked_annotations.dart';
+import 'package:stacked_cli_app/app/app.aliases.dart';
 import 'package:stacked_cli_app/ui/bottom_sheets/notice/notice_sheet.dart';
 import 'package:stacked_cli_app/ui/dialogs/info_alert/info_alert_dialog.dart';
 import 'package:stacked_cli_app/ui/views/home/home_view.dart';
 import 'package:stacked_cli_app/ui/views/startup/startup_view.dart';
-import 'package:stacked/stacked_annotations.dart';
-import 'package:stacked_services/stacked_services.dart';
 // @stacked-import
 
 @StackedApp(
@@ -13,9 +13,9 @@ import 'package:stacked_services/stacked_services.dart';
     // @stacked-route
   ],
   dependencies: [
-    LazySingleton(classType: BottomSheetService),
-    LazySingleton(classType: DialogService),
-    LazySingleton(classType: NavigationService),
+    LazySingleton(classType: InnerBottomSheetService),
+    LazySingleton(classType: InnerDialogService),
+    LazySingleton(classType: InnerNavigationService),
     // @stacked-service
   ],
   bottomsheets: [
